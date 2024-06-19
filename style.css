@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'Gilmer';
     src: url(Gilmer-Font/Gilmer\ Light.otf);
@@ -11,18 +13,11 @@
     box-sizing: border-box;
 }
 
-
-
 .container{
     width: 100%;
     min-height: 100vh;
     /* background-color: #3b3c3c; */
     background-color: #080808;
-    /* background: linear-gradient(135deg,#153677,#4e085f) ; */
-    /* background: url(images/bg4.jfif);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden; */
     padding: 10px;
 }
 
@@ -30,7 +25,7 @@
     width: 100%;
     max-width: 540px;
     /* max-width: 440px; */
-    width: 380px;
+    width: 380px; 
     /* background: #080808; */
     background: #3b3c3c;
     margin: 100px auto 20px;
@@ -41,7 +36,6 @@
 .todo-app h2{
     color: #fff;
     display: flex;
-    /* align-items: center; */
     margin-bottom:30px;
 }
 
@@ -60,12 +54,6 @@
     margin-bottom: 25px;
     /* box-shadow: #AF40FF; */
 }
-/* 
-.row button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 input{
     flex: 1;
@@ -90,7 +78,7 @@ button{
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 10px 8px 30px 42px;
+    padding: 14px 8px 14px 46px;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -99,8 +87,6 @@ ul li{
     /* border-radius: 10px; */
     /* border: 1px solid #6d6d6d; */
     border-radius: 10px;
-
-
 }
 
 /* ul li:hover{
@@ -119,11 +105,10 @@ ul li::before{
     top: 12px;
     left: 8px;
 }
-ul li.checked{
 
+ul li.checked{
     color: white;
     text-decoration: line-through;
-
 }
 
 ul li.checked::before{
@@ -142,7 +127,6 @@ ul li span{
     text-align: center;
     border-radius: 50%;
     padding-right: 10px;
-    
 }
 
 ul li span:hover{
@@ -156,6 +140,8 @@ ul li span:hover{
     display: flex;
     justify-content: center;
 }
+
+/*  making responsive */
 
 @media screen and (max-width: 400px) {
    .todo-app{
@@ -171,9 +157,6 @@ ul li span:hover{
    ul li{
     font-size: 14px;
    }
-   /* button.Add{
-    margin-right: auto;
-   } */
 
    ul li::before{
     height: 22px;
@@ -183,17 +166,13 @@ ul li span:hover{
 
 }
 
-ul li span{
-    /* padding-bottom: 10px; */
-    /* padding-bottom: 20px; */
-}
 
 }
 
 
 
 
-
+/* button css */
 
 
 .Add {
