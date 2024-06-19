@@ -135,6 +135,16 @@ ul li span:hover{
     font-size: 30px;
     color: white    ;
 }  
+#completion-percentage{
+
+    display: none;  
+    justify-content: center;
+    font-family: "Gilmer";
+    font-weight: 500;
+    font-size: larger;
+    color: white;
+    padding: 10px;
+}
 
 .heading{
     display: flex;
