@@ -28,7 +28,9 @@
 
 .todo-app{
     width: 100%;
-    max-width: 380px;
+    max-width: 540px;
+    /* max-width: 440px; */
+    width: 380px;
     /* background: #080808; */
     background: #3b3c3c;
     margin: 100px auto 20px;
@@ -58,6 +60,12 @@
     margin-bottom: 25px;
     /* box-shadow: #AF40FF; */
 }
+/* 
+.row button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 input{
     flex: 1;
@@ -76,6 +84,7 @@ button{
     font-size: 16px;
     cursor: pointer;
     border-radius: 50%;
+    /* margin-left: 20px; */
 }
 
 ul li{
@@ -147,6 +156,22 @@ ul li span:hover{
     justify-content: center;
 }
 
+@media screen and (max-width: 400px) {
+   .todo-app{
+    width: 300px;
+   }
+   #input-box{
+    width: 200px;
+   }
+   .row{
+    width: 180px;
+   }
+   /* button.Add{
+    margin-right: 30px;
+   } */
+
+}
+
 
 
 
@@ -175,6 +200,7 @@ ul li span:hover{
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
+    margin-right: auto;
   }
   
   .Add:active,
@@ -185,9 +211,9 @@ ul li span:hover{
   .Add span {
     background-color: rgb(5, 6, 45);
     /* background-color: #3D3B40; */
-    padding: 16px 24px;
     border-radius: 40px;
     width: 100%;
+    padding: 16px 24px;
     height: 100%;
     transition: 300ms;
   }
@@ -196,10 +222,11 @@ ul li span:hover{
     background: none;
   }
   
-  @media (min-width: 768px) {
-    .Add{
-      font-size: 24px;
-      /* min-width: 196px; */
-      min-width: 140px;
+
+    @media (max-width: 500px) {
+        .Add{
+        font-size: 12px;
+        /* min-width: 196px; */
+        min-width: 70px;
+        }
     }
-  }
