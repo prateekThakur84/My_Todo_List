@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
+// function to add our task
 
 function addTask(){
     if(inputBox.value === ""){ 
@@ -18,6 +19,8 @@ function addTask(){
     saveData();
 }
 
+// handling click event on row to make task as done or to clear the task
+
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
@@ -29,9 +32,13 @@ listContainer.addEventListener("click", function(e){
     }
 },false);
 
+// saving data temporary in local storage
+
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 };
+
+
 
     function showList(){
     listContainer.innerHTML = localStorage.getItem("data");
