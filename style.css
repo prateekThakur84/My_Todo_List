@@ -90,7 +90,7 @@ button{
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 20px 50px;
+    padding: 10px 8px 30px 42px;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -138,10 +138,11 @@ ul li span{
     height: 40px;
     font-size: 22px;
     color: #fff;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     border-radius: 50%;
     padding-right: 10px;
+    
 }
 
 ul li span:hover{
@@ -161,14 +162,31 @@ ul li span:hover{
     width: 300px;
    }
    #input-box{
-    width: 200px;
+    width: 50px;
    }
    .row{
-    width: 180px;
+    width: 250px;
+   }
+
+   ul li{
+    font-size: 14px;
    }
    /* button.Add{
-    margin-right: 30px;
+    margin-right: auto;
    } */
+
+   ul li::before{
+    height: 22px;
+    width: 22px;
+    top: 8px;
+    left: 8px;
+
+}
+
+ul li span{
+    /* padding-bottom: 10px; */
+    /* padding-bottom: 20px; */
+}
 
 }
 
@@ -223,7 +241,7 @@ ul li span:hover{
   }
   
 
-    @media (max-width: 500px) {
+    @media (max-width: 400px) {
         .Add{
         font-size: 12px;
         /* min-width: 196px; */
